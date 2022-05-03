@@ -1,0 +1,4 @@
+# HEROKU POWERSHELL COMMANDS --->
+# heroku ps:scale worker=1
+# heroku restart worker.1
+# heroku logs
