@@ -5,7 +5,7 @@
 
 ## Demo below --->
 
-![alt text]()
+![alt text](https://github.com/ShruAgarwal/Twitter-bot/blob/main/demo.gif)
 
 
 ## Try it out in simple steps : 👇
