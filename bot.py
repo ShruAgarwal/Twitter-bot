@@ -13,14 +13,14 @@ import numpy as np
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Loading twitter credentials
-consumer_key = os.environ("API_KEY")
-consumer_secret = os.environ("API_SECRET")
-access_token = os.environ("ACCESS_TOKEN")
-access_token_secret = os.environ("ACCESS_TOKEN_SECRET")
+API_KEY = os.environ("API_KEY")
+API_SECRET = os.environ("API_SECRET")
+ACCESS_TOKEN = os.environ("ACCESS_TOKEN")
+ACCESS_TOKEN_SECRET = os.environ("ACCESS_TOKEN_SECRET")
 
 # Authenticate to Twitter using Tweepy
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 # Connect to the TWITTER API
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
