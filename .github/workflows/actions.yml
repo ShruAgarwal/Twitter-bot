@@ -1,4 +1,4 @@
-name: Tweet sketch
+name: run bot.py
 
 on:
   schedule:
