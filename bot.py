@@ -1,6 +1,5 @@
 # Imports --
 import os
-from env_load import load_twitter_env
 from io import BytesIO
 from time import sleep
 import requests
@@ -14,7 +13,10 @@ import numpy as np
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Loading twitter credentials
-consumer_key, consumer_secret, access_token, access_token_secret = load_twitter_env()
+consumer_key = os.environ("API_KEY")
+consumer_secret = os.environ("API_SECRET")
+access_token = os.environ("ACCESS_TOKEN")
+access_token_secret = os.environ("ACCESS_TOKEN_SECRET")
 
 # Authenticate to Twitter using Tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
