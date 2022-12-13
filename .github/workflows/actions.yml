@@ -2,7 +2,7 @@ name: Tweet sketch
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # At every 10 minutes
+    - cron: '*/30 * * * *' # At every 30 minutes
 
 jobs:
   build:
