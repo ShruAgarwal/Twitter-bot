@@ -75,7 +75,7 @@ class BotStreamer(tweepy.StreamListener):
                 image_content=requests.get(media["media_url"], stream=True)
 
             tweet_image(image_content, username, status_id)
-            sleep(30)
+            sleep(20)
         except tweepy.TweepError as e:
             print(e.reason)
         except StopIteration:
