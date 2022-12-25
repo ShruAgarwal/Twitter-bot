@@ -75,7 +75,7 @@ class BotStreamer(tweepy.StreamListener):
                 image_content=requests.get(media["media_url"], stream=True)
 
             tweet_image(image_content, username, status_id)
-            sleep(30)
+            sleep(30) #3600 secs --> 1 hour to match the github action
         except tweepy.TweepError as e:
             print(e.reason)
         except StopIteration:
